@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Smoke-Test-Suite]">
+  <parameter name="pwd" value="123456"/>
+  <parameter name="email" value="diwakara.kumar77@gmail.com"/>
+  <parameter name="classname" value="com.diw.main.DriverManager"/>
+  <parameter name="browser" value="org.openqa.selenium.chrome.ChromeDriver"/>
+  <parameter name="ie-driver-path" value="Drivers\IEDriverServer.exe"/>
+  <parameter name="chrome-driver-path" value="Drivers\chromedriver.exe"/>
+  <listeners>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+  </listeners>
+  <test name="Login-test(failed)">
+    <classes>
+      <class name="com.diw.test.LoginTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tear"/>
+          <include name="checkUserLogout"/>
+          <include name="checkUserLogin" invocation-numbers="0"/>
+          <include name="setDriver"/>
+          <include name="checkSub"/>
+        </methods>
+      </class> <!-- com.diw.test.LoginTest -->
+      <class name="com.diw.main.DriverManager">
+        <methods>
+          <include name="setupChromeAndIEDriverProps"/>
+        </methods>
+      </class> <!-- com.diw.main.DriverManager -->
+    </classes>
+  </test> <!-- Login-test(failed) -->
+</suite> <!-- Failed suite [Smoke-Test-Suite] -->

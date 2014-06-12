@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Browser class values:
+	 org.openqa.selenium.firefox.FirefoxDriver
+	 org.openqa.selenium.chrome.ChromeDriver 
+	 org.openqa.selenium.ie.InternetExplorerDriver
+ -->
+ 
+<suite name="Smoke-Test-Suite">
+
+	<listeners>
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+	</listeners>
+
+	<parameter name="classname" value="com.diw.main.DriverManager" />
+	<parameter name="browser" value="org.openqa.selenium.chrome.ChromeDriver" />
+	<parameter name="chrome-driver-path" value="Drivers\chromedriver.exe" />
+	<parameter name="ie-driver-path" value="Drivers\IEDriverServer.exe" />
+
+	<parameter name="email" value="diwakara.kumar77@gmail.com" />
+	<parameter name="pwd" value="123456" />
+
+	<test name="Login-test">
+		<classes>
+			<class name="com.diw.main.DriverManager" />
+			<class name="com.diw.test.LoginTest" />
+		</classes>
+	</test>
+
+</suite>

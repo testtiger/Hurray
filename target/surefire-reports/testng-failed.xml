@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="4" verbose="0" name="Failed suite [Diw-Test-Suite]" parallel="tests">
+  <parameter name="pwd" value="123456"/>
+  <parameter name="huburl" value="http://localhost:4444/wd/hub"/>
+  <parameter name="email" value="diwakara.kumar77@gmail.com"/>
+  <parameter name="classname" value="com.diw.main.GridManager"/>
+  <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+  </listeners>
+  <test name="Chrome-Browser-Test(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.diw.main.GridManager">
+        <methods>
+          <include name="setHubURL"/>
+        </methods>
+      </class> <!-- com.diw.main.GridManager -->
+      <class name="com.diw.test.LoginTest">
+        <methods>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="tear"/>
+          <include name="tear"/>
+          <include name="checkUserLogout"/>
+          <include name="checkUserLogin" invocation-numbers="0"/>
+          <include name="setDriver"/>
+          <include name="setDriver"/>
+          <include name="checkSub"/>
+        </methods>
+      </class> <!-- com.diw.test.LoginTest -->
+    </classes>
+  </test> <!-- Chrome-Browser-Test(failed) -->
+  <test name="Firefox-Browser-Test(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.diw.main.GridManager">
+        <methods>
+          <include name="setHubURL"/>
+        </methods>
+      </class> <!-- com.diw.main.GridManager -->
+      <class name="com.diw.test.LoginTest">
+        <methods>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="tear"/>
+          <include name="tear"/>
+          <include name="checkUserLogout"/>
+          <include name="checkUserLogin" invocation-numbers="0"/>
+          <include name="setDriver"/>
+          <include name="setDriver"/>
+          <include name="checkSub"/>
+        </methods>
+      </class> <!-- com.diw.test.LoginTest -->
+    </classes>
+  </test> <!-- Firefox-Browser-Test(failed) -->
+</suite> <!-- Failed suite [Diw-Test-Suite] -->
