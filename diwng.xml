@@ -17,8 +17,8 @@
 	<parameter name="chrome-driver-path" value="Drivers\chromedriver.exe" />
 	<parameter name="ie-driver-path" value="Drivers\IEDriverServer.exe" />
 
-	<parameter name="email" value="diwakara.kumar77@gmail.com" />
-	<parameter name="pwd" value="123456" />
+	<parameter name="email" value="xxxx" />
+	<parameter name="pwd" value="xxxx" />
 
 	<test name="Login-test">
 		<classes>
