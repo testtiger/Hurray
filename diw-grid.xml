@@ -20,6 +20,7 @@
 		<classes>
 			<class name="com.diw.main.GridManager" />
 			<class name="com.diw.test.LoginTest" />
+			<class name="com.diw.test.RegistrationTest" />
 		</classes>
 	</test>
 	<test name="Chrome-Browser-Test">
@@ -27,6 +28,7 @@
 		<classes>
 			<class name="com.diw.main.GridManager" />
 			<class name="com.diw.test.LoginTest" />
+			<class name="com.diw.test.RegistrationTest" />
 		</classes>
 	</test>
 </suite>

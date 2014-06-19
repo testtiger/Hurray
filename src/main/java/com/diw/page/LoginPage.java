@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 
 public class LoginPage {
 
-	private static String email="//input[@id='email1']";
+	private static String email="//input[@id='email']";
 	private static String pwd="//input[@type='password']";
 	private static String sign_in="//button[@id='send2']";
 	private static String Loinpage_id="//h1[contains(text(),'Sign In')]";

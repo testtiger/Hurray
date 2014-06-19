@@ -13,14 +13,18 @@
   </listeners>
   <test name="Login-test(failed)">
     <classes>
-      <class name="com.diw.test.LoginTest">
+      <class name="com.diw.test.RegistrationTest">
         <methods>
           <include name="setup"/>
           <include name="tear"/>
-          <include name="checkUserLogout"/>
-          <include name="checkUserLogin" invocation-numbers="0"/>
           <include name="setDriver"/>
-          <include name="checkSub"/>
+          <include name="checkRegistration"/>
+        </methods>
+      </class> <!-- com.diw.test.RegistrationTest -->
+      <class name="com.diw.test.LoginTest">
+        <methods>
+          <include name="setup"/>
+          <include name="setDriver"/>
         </methods>
       </class> <!-- com.diw.test.LoginTest -->
       <class name="com.diw.main.DriverManager">

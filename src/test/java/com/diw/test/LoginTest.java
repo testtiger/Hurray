@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -19,7 +20,7 @@ public class LoginTest extends RootTest{
 	private WebDriver driver;
 	private static String url = "http://www.routeone.co.uk/";
 
-	@BeforeTest
+	@BeforeClass
 	public void setDriver(){
 		driver=super.getDriver();
 		driver.get(url);
@@ -41,18 +42,7 @@ public class LoginTest extends RootTest{
 				By.xpath("//h1[contains(text(),'You are now logged out')]"))
 				.isDisplayed());
 	}
-	@Test
-	public void checkSub() {
 
-		
-		Assert.assertEquals(2-2,4);
-	}
-	@Test
-	public void checksum() {
-
-		
-		Assert.assertEquals(2+2,4);
-	}
 	
 
 

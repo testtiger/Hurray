@@ -9,9 +9,8 @@ import org.testng.annotations.Parameters;
 import com.diw.Tracker.EventTracker;
 
 public class DriverManager implements Manager {
-	private WebDriver driver;
+	private static WebDriver driver;
 
-	@Override
 	public WebDriver getDriver(String browser_name) {
 		if(driver==null){
 			setDriver(browser_name);
@@ -19,7 +18,7 @@ public class DriverManager implements Manager {
 		return driver;
 	}
 
-	@Override
+
 	public void setDriver(String browser) {
 		try {
 			driver = (WebDriver) Class.forName(browser).newInstance();

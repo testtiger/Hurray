@@ -24,6 +24,7 @@
 		<classes>
 			<class name="com.diw.main.DriverManager" />
 			<class name="com.diw.test.LoginTest" />
+			<class name="com.diw.test.RegistrationTest" />
 		</classes>
 	</test>
 

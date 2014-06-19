@@ -13,47 +13,59 @@
   <test name="Chrome-Browser-Test(failed)" parallel="tests">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.diw.main.GridManager">
-        <methods>
-          <include name="setHubURL"/>
-        </methods>
-      </class> <!-- com.diw.main.GridManager -->
       <class name="com.diw.test.LoginTest">
         <methods>
           <include name="setup"/>
           <include name="setup"/>
           <include name="tear"/>
           <include name="tear"/>
-          <include name="checkUserLogout"/>
-          <include name="checkUserLogin" invocation-numbers="0"/>
           <include name="setDriver"/>
           <include name="setDriver"/>
-          <include name="checkSub"/>
         </methods>
       </class> <!-- com.diw.test.LoginTest -->
+      <class name="com.diw.test.RegistrationTest">
+        <methods>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="setDriver"/>
+          <include name="setDriver"/>
+          <include name="checkRegistration"/>
+        </methods>
+      </class> <!-- com.diw.test.RegistrationTest -->
+      <class name="com.diw.main.GridManager">
+        <methods>
+          <include name="setHubURL"/>
+        </methods>
+      </class> <!-- com.diw.main.GridManager -->
     </classes>
   </test> <!-- Chrome-Browser-Test(failed) -->
   <test name="Firefox-Browser-Test(failed)" parallel="tests">
     <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="com.diw.main.GridManager">
-        <methods>
-          <include name="setHubURL"/>
-        </methods>
-      </class> <!-- com.diw.main.GridManager -->
       <class name="com.diw.test.LoginTest">
         <methods>
           <include name="setup"/>
           <include name="setup"/>
           <include name="tear"/>
           <include name="tear"/>
-          <include name="checkUserLogout"/>
-          <include name="checkUserLogin" invocation-numbers="0"/>
           <include name="setDriver"/>
           <include name="setDriver"/>
-          <include name="checkSub"/>
         </methods>
       </class> <!-- com.diw.test.LoginTest -->
+      <class name="com.diw.test.RegistrationTest">
+        <methods>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="setDriver"/>
+          <include name="setDriver"/>
+          <include name="checkRegistration"/>
+        </methods>
+      </class> <!-- com.diw.test.RegistrationTest -->
+      <class name="com.diw.main.GridManager">
+        <methods>
+          <include name="setHubURL"/>
+        </methods>
+      </class> <!-- com.diw.main.GridManager -->
     </classes>
   </test> <!-- Firefox-Browser-Test(failed) -->
 </suite> <!-- Failed suite [Diw-Test-Suite] -->

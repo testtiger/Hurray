@@ -56,14 +56,16 @@ public class UserActions {
 		}
 	}	
 	public static String getText(WebDriver driver,By locator){	
-		WebElement we=null;
+
 		try{
-			we=UserActions.getWebElement(driver, locator);
+			WebElement we = UserActions.getWebElement(driver, locator);
+			return we.getText();
 		}
 		catch(Exception e){
-			log.error("Failed to Type !! locator details are"+locator+"Exception stack tarce is:"+e);	
+			log.error("Failed to get the text  of the  desired element !! locator details are"+locator+"Exception stack tarce is:"+e);	
 		}
-		return we.getText();
+		return null;
+		
 		
 	}
 	public static void selectOptionFromDropDwon(WebDriver driver,By locator,int index){	

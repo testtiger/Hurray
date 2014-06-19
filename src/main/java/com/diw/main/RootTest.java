@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -18,7 +19,8 @@ public class RootTest {
 	private Manager manager;
 	private WebDriver driver;
 
-	@BeforeTest
+	
+	@BeforeClass
 	@Parameters({ "browser", "classname" })
 	public void setup(String browser, String classname) {
 		try {
