@@ -1,0 +1,60 @@
+{
+  "time" : {
+    "start" : 1405590265436,
+    "stop" : 1405590346436,
+    "duration" : 81000
+  },
+  "testSuites" : [ {
+    "uid" : "7e9da78282a68017",
+    "name" : "Smoke-Test-Suite",
+    "title" : "Smoke-Test-Suite",
+    "time" : {
+      "start" : 1405590265436,
+      "stop" : 1405590346436,
+      "duration" : 81000
+    },
+    "statistic" : {
+      "total" : 3,
+      "passed" : 2,
+      "pending" : 0,
+      "canceled" : 0,
+      "failed" : 1,
+      "broken" : 0
+    },
+    "description" : null,
+    "testCases" : [ {
+      "uid" : "bc9017ce2848d352",
+      "name" : "checkUserLogin[diwakara.kumar77@gmail.com,123456]",
+      "title" : "Check user login [diwakara.kumar77@gmail.com,123456]",
+      "time" : {
+        "start" : 1405590286703,
+        "stop" : 1405590302392,
+        "duration" : 15689
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "bda9bd830489f35f",
+      "name" : "checkUserLogout",
+      "title" : "Check user logout",
+      "time" : {
+        "start" : 1405590302456,
+        "stop" : 1405590305502,
+        "duration" : 3046
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "a586aaa24d8734db",
+      "name" : "checkRegistration",
+      "title" : "Check registration",
+      "time" : {
+        "start" : 1405590305508,
+        "stop" : 1405590345133,
+        "duration" : 39625
+      },
+      "severity" : "NORMAL",
+      "status" : "FAILED"
+    } ]
+  } ]
+}

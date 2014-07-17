@@ -20,7 +20,7 @@ public class GridManager implements Manager {
 	private DesiredCapabilities caps;
 	private static String hub_URL;
 
-	@Override
+
 	public WebDriver getDriver(String browser) {
 		try{
 			if(browser.equalsIgnoreCase("firefox")){
@@ -43,7 +43,7 @@ public class GridManager implements Manager {
 		hub_URL = url;
 	}
 
-	@Override
+
 	public void setDriver(String bname) {
 
 	}

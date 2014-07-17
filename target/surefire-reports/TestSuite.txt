@@ -1,16 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 78.161 sec <<< FAILURE! - in TestSuite
-checkRegistration(com.diw.test.RegistrationTest)  Time elapsed: 41.145 sec  <<< FAILURE!
-java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:494)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at org.testng.Assert.assertTrue(Assert.java:52)
-	at com.diw.test.RegistrationTest.checkRegistration(RegistrationTest.java:40)
-
-checkRegistration(com.diw.test.RegistrationTest)  Time elapsed: 43.041 sec  <<< FAILURE!
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 81.844 sec <<< FAILURE! - in TestSuite
+checkRegistration(com.diw.test.RegistrationTest)  Time elapsed: 39.623 sec  <<< FAILURE!
 java.lang.AssertionError: expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:494)

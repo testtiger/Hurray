@@ -1,0 +1,28 @@
+{
+  "uid" : "bc9017ce2848d352",
+  "name" : "checkUserLogin[diwakara.kumar77@gmail.com,123456]",
+  "title" : "Check user login [diwakara.kumar77@gmail.com,123456]",
+  "time" : {
+    "start" : 1405590286703,
+    "stop" : 1405590302392,
+    "duration" : 15689
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 0
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "steps" : [ ],
+  "attachments" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Without feature"
+  }, {
+    "name" : "story",
+    "value" : "Without story"
+  } ],
+  "parameters" : [ ]
+}

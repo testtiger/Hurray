@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Firefox-Browser-Test"
+<testsuite name="Login-test"
            tests="2"
            failures="0"
            errors="0"
            skipped="0"
-           time="21.652">
+           time="18.742">
   <properties />
   
   
-            <testcase name="checkUserLogin" time="17.168" classname="com.diw.test.LoginTest" />
-                <testcase name="checkUserLogout" time="4.484" classname="com.diw.test.LoginTest" />
+            <testcase name="checkUserLogin" time="15.696" classname="com.diw.test.LoginTest" />
+                <testcase name="checkUserLogout" time="3.046" classname="com.diw.test.LoginTest" />
       
 </testsuite>

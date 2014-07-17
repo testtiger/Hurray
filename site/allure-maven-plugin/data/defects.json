@@ -1,0 +1,25 @@
+{
+  "defectsList" : [ {
+    "title" : "Product defects",
+    "status" : "FAILED",
+    "defects" : [ {
+      "uid" : "1812a57f315b5186",
+      "failure" : {
+        "message" : "AssertionError: expected [true] but found [false]",
+        "stackTrace" : null
+      },
+      "testCases" : [ {
+        "uid" : "a586aaa24d8734db",
+        "name" : "checkRegistration",
+        "title" : "Check registration",
+        "time" : {
+          "start" : 1405590305508,
+          "stop" : 1405590345133,
+          "duration" : 39625
+        },
+        "severity" : "NORMAL",
+        "status" : "FAILED"
+      } ]
+    } ]
+  } ]
+}
