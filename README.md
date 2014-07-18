@@ -23,6 +23,9 @@ After that use following maven commands to run the tests parllely:
  
 [Allure]:http://allure.qatools.ru/
 [ReportNG]:http://reportng.uncommons.org/
+[Hub and node setup]:https://code.google.com/p/selenium/wiki/Grid2
+
+Note: To run the test in parallel execution we need to setup Selenium Grid hub and externally see [Hub and node setup]
 
 Reports:
 ========
@@ -47,7 +50,10 @@ inorder to run the test on above browsers open  diwng.xml(for linear mode) find 
 * 'org.openqa.selenium.firefox.FirefoxDriver'
 * 'org.openqa.selenium.chrome.ChromeDriver'
 * 'org.openqa.selenium.ie.InternetExplorerDriver'
-depend on the requiremnt use the above values
+* 
+depend on the requiremnt use an y on of the the above values
+
+
 
 Using Hurray for your projects:
 ================
