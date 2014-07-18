@@ -11,7 +11,7 @@ To run the project you need to install [Maven].
 Use the following maven command to run the tests linearly: 
 * Mvn clean test
 
-To run the test in Parallel mode open the POM.xml find the following text :"${basedir}\diwng.xml" and change it to "${basedir}\diwng.xml"
+To run the test in Parallel mode open the POM.xml find the following text :"${basedir}\diwng.xml" and change it to "${basedir}\diw-grid.xml"
 After that use following maven commands to run the tests parallel:
 * Mvn clean test
 [Allure]:http://allure.qatools.ru/
