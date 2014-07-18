@@ -39,11 +39,18 @@ After that Open allure-maven-plugin.html  in the  following location \site\allur
 
 Browsers on which Hurray will run:
 ==================================
-Righ now Hurray is implemnted for Chrome,IE,and firefox only
+Righ now Hurray can be run in  Chrome,IE,and firefox
 
-inorder to run the test on above browsers open  diwng.xml find the <Pam
+inorder to run the test on above browsers open  diwng.xml(for linear mode) find the the <parameter name="browser" value="XXX"> tag
+'XXX' values are 
+================
+* 'org.openqa.selenium.firefox.FirefoxDriver'
+* 'org.openqa.selenium.chrome.ChromeDriver'
+* 'org.openqa.selenium.ie.InternetExplorerDriver'
+depend on the requiremnt use the above values
 
 Using Hurray for your projects:
+================
 
 
  
