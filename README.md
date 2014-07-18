@@ -27,6 +27,7 @@ To view the ReportNg generated results open the index.html file at the following
 To view the Allure generated results you should perform following steps:
 * Mvn clean test
 * Mvn site
+
 After that open allure-maven-plugin.html  in the  following location \site\allure-maven-plugin.html
 Note: When opening allure-maven-plugin.html from the local file either open it in Firefox or launch Chrome with --allow-file-access-from-files flag. For other browsers you need to enable cross origin requests to local files.
 
