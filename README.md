@@ -12,7 +12,7 @@ Use the following maven command to run the tests linearly:
 * Mvn clean test
 
 To run the test in Parallel mode open the POM.xml find the following text :"${basedir}\diwng.xml" and change it to "${basedir}\diw-grid.xml"
-After that use following maven commands to run the tests parallel:
+after that use following maven command to run the tests parallel:
 * Mvn clean test
 [Allure]:http://allure.qatools.ru/
 [ReportNG]:http://reportng.uncommons.org/
