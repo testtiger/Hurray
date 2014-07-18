@@ -2,9 +2,9 @@ Hurray
 ======
 Huuray is the web application automation framework developed using Selenium web driver(JAVA).
 
-By using Hurray we can run the develpoed automation tests either in Linear or Parallel execution modes 
+* By using Hurray we can run the develpoed automation tests either in Linear or Parallel execution modes 
 
-'diwng.xml' and diw-grid.xml' are TestNg realted files by using diwng.xml we can the tests in linera mode and diw-grid.xml needs to be used inorder to run tests in Parllel mode.
+* 'diwng.xml' and diw-grid.xml' are TestNg realted files by using diwng.xml we can the tests in linera mode and diw-grid.xml needs to be used to run tests in Parllel mode.
 
 How to run:
 ===========
