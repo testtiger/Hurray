@@ -37,7 +37,13 @@ To view the Allure generated results you should perform following steps:
 After that Open allure-maven-plugin.html  in the  following location \site\allure-maven-plugin.html
 
 
+Browsers on which Hurray will run:
+==================================
+Righ now Hurray is implemnted for Chrome,IE,and firefox only
 
+inorder to run the test on above browsers open  diwng.xml find the <Pam
+
+Using Hurray for your projects:
 
 
  
