@@ -3,6 +3,7 @@ Hurray
 Huuray is the web application automation framework developed using Selenium web driver (JAVA).
 * By using Hurray we can run the developed automation tests either in Linear or Parallel execution modes 
 * 'diwng.xml' and diw-grid.xml' are Testing related files by using diwng.xml we can the tests in linear mode and diw-grid.xml needs to be used to run tests in Parallel mode.
+
 How to run:
 ===========
 [Maven]: http://maven.apache.org/
@@ -27,6 +28,7 @@ To view the Allure generated results you should perform following steps:
 * Mvn site
 After that open allure-maven-plugin.html  in the  following location \site\allure-maven-plugin.html
 Note: When opening allure-maven-plugin.html from the local file either open it in Firefox or launch Chrome with --allow-file-access-from-files flag. For other browsers you need to enable cross origin requests to local files.
+
 Browsers on which Hurray will run:
 ==================================
 Right now Hurray can be run in  Chrome,IE,and firefox
