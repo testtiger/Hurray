@@ -6,26 +6,20 @@ By using Hurray we can run the develpoed automation tests either in Linear or Pa
 
 'diwng.xml' and diw-grid.xml' are TestNg realted files by using diwng.xml we can the tests in linera mode and diw-grid.xml needs to be used inorder to run tests in Parllel mode.
 
-
 How to run:
 ===========
 [Maven]: http://maven.apache.org/
-
 To run the project you need to install [Maven].
-
 use the following maven command to run the tests lineraly: 
 * mvn clean test
-
-
 To run the test in Parallel mode open the POM.xml find the following tag :<suiteXmlFile>${basedir}\diwng.xml</suiteXmlFile> and change it to <suiteXmlFile>${basedir}\diwng.xml</suiteXmlFile>
 After that use following maven commands to run the tests parllely:
 * mvn clean test
- 
 [Allure]:http://allure.qatools.ru/
 [ReportNG]:http://reportng.uncommons.org/
 [Hub and node setup]:https://code.google.com/p/selenium/wiki/Grid2
 
-Note: To run the test in parallel execution we need to setup Selenium Grid hub and externally see [Hub and node setup]
+Note: To run the test in parallel execution we need to setup Hub and nodes and externally see [Hub and node setup]
 
 Reports:
 ========
