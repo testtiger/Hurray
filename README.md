@@ -12,7 +12,7 @@ How to run:
 To run the project you need to install [Maven].
 use the following maven command to run the tests lineraly: 
 * mvn clean test
-To run the test in Parallel mode open the POM.xml find the following tag :<suiteXmlFile>${basedir}\diwng.xml</suiteXmlFile> and change it to <suiteXmlFile>${basedir}\diwng.xml</suiteXmlFile>
+To run the test in Parallel mode open the POM.xml find the following text :"${basedir}\diwng.xml" and change it to "${basedir}\diwng.xml"
 After that use following maven commands to run the tests parllely:
 * mvn clean test
 [Allure]:http://allure.qatools.ru/
@@ -23,7 +23,7 @@ Note: To run the test in parallel execution we need to setup Hub and nodes and e
 
 Reports:
 ========
-In Hurray [Allure] framework and [ReportNG] is used for test results.
+In Hurray [Allure] framework and [ReportNG] is used for test results reports.
 
 To view the ReportNg generated results open the index.html file at the following location:\target\surefire-reports\html
 
@@ -32,6 +32,7 @@ To view the Allure generated results you should perform following steps:
 * mvn site
 
 After that Open allure-maven-plugin.html  in the  following location \site\allure-maven-plugin.html
+
 Note: When opening allure-maven-plugin.html from the local file either open it in Firefox or launch Chrome with --allow-file-access-from-files flag. For other browsers you need to enable cross origin requests to local files.
 
 
@@ -39,14 +40,15 @@ Browsers on which Hurray will run:
 ==================================
 Righ now Hurray can be run in  Chrome,IE,and firefox
 
-inorder to run the test on above browsers open  diwng.xml(for linear mode) find the the <parameter name="browser" value="XXX"> tag
+inorder to run the test on above browsers open  diwng.xml(for linear mode) find the following text: "parameter name="browser" value="XXX" 
+
 'XXX' values are 
 ================
 * 'org.openqa.selenium.firefox.FirefoxDriver'
 * 'org.openqa.selenium.chrome.ChromeDriver'
 * 'org.openqa.selenium.ie.InternetExplorerDriver'
-* 
-depend on the requiremnt use an y on of the the above values
+
+depend on the requiremnt put any one of the the above values in place of XXX.
 
 
 
