@@ -10,6 +10,10 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import ru.yandex.qatools.allure.annotations.Features;
+import ru.yandex.qatools.allure.annotations.Step;
+import ru.yandex.qatools.allure.annotations.Stories;
+
 import com.diw.main.Manager;
 import com.diw.main.RootTest;
 import com.diw.page.LoginPage;
@@ -24,8 +28,14 @@ public class LoginTest extends RootTest{
 	public void setDriver(){
 		driver=super.getDriver();
 		driver.get(url);
+	
 	}
-
+	@Features("RO Search feature")
+	@Stories("Search #8914")
+	@Step("Entering Username and password in the corresponding fields & click on sign in button" )
+	public void m1(){
+		
+	}
 	@Parameters({ "email", "pwd" })
 	@Test
 	public void checkUserLogin(String email_id, String pwd) {
@@ -33,7 +43,7 @@ public class LoginTest extends RootTest{
 		LoginPage.doLogin(this.driver, email_id, pwd);
 		Assert.assertTrue(driver.getTitle().contains("My Account"));
 	}
-
+	@Step("Click on Log out link in the Header ")
 	@Test
 	public void checkUserLogout() {
 
@@ -43,7 +53,7 @@ public class LoginTest extends RootTest{
 				.isDisplayed());
 	}
 
-	
+
 
 
 

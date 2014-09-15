@@ -8,8 +8,9 @@
 <suite name="Smoke-Test-Suite">
 
 	<listeners>
-		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
-		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+		<listener class-name="org.uncommons.reportng.HTMLReporter"/>
+		
 	</listeners>
 
 	<parameter name="classname" value="com.diw.main.DriverManager" />

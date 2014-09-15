@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="58.366" tests="3" errors="0" skipped="0" failures="1">
+<testsuite name="TestSuite" time="74.968" tests="3" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk\jre\bin"/>
@@ -27,7 +27,7 @@
     <property name="os.name" value="Windows 7"/>
     <property name="classworlds.conf" value="C:\Users\Admin\Desktop\Sel\apache-maven-3.2.1-bin\apache-maven-3.2.1\bin\..\bin\m2.conf"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files (x86)\Common Files\Roxio Shared\DLLShared\;C:\Program Files (x86)\Common Files\Roxio Shared\OEM\DLLShared\;C:\Program Files (x86)\Common Files\Roxio Shared\OEM\DLLShared\;C:\Program Files (x86)\Common Files\Roxio Shared\OEM\12.0\DLLShared\;C:\Program Files (x86)\Roxio\OEM\AudioCore\;C:\Program Files (x86)\Google\Google Apps Sync\;C:\Program Files (x86)\Google\Google Apps Migration\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Java\jdk\bin;E:\Ant\apache-ant-1.9.2-bin\apache-ant-1.9.2\bin;C:\Users\Admin\Desktop\Sel\chromedriver.exe;C:\Users\Admin\Desktop\Sel\apache-maven-3.2.1-bin\apache-maven-3.2.1\bin;C:\Program Files\nodejs\;C:\Users\Admin\AppData\Roaming\npm;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files (x86)\Common Files\Roxio Shared\DLLShared\;C:\Program Files (x86)\Common Files\Roxio Shared\OEM\DLLShared\;C:\Program Files (x86)\Common Files\Roxio Shared\OEM\DLLShared\;C:\Program Files (x86)\Common Files\Roxio Shared\OEM\12.0\DLLShared\;C:\Program Files (x86)\Roxio\OEM\AudioCore\;C:\Program Files (x86)\Google\Google Apps Sync\;C:\Program Files (x86)\Google\Google Apps Migration\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Java\jdk\bin;E:\Ant\apache-ant-1.9.2-bin\apache-ant-1.9.2\bin;C:\Users\Admin\Desktop\Sel\chromedriver.exe;C:\Users\Admin\Desktop\Sel\apache-maven-3.2.1-bin\apache-maven-3.2.1\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\MySQL\MySQL Utilities 1.4.3\;C:\Program Files (x86)\MySQL\MySQL Utilities 1.4.3\Doctrine extensions for PHP\;C:\Users\Admin\AppData\Roaming\npm;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="51.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -60,15 +60,13 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="checkUserLogin" classname="com.diw.test.LoginTest" time="15.697"/>
-  <testcase name="checkUserLogout" classname="com.diw.test.LoginTest" time="3.046"/>
-  <testcase name="checkRegistration" classname="com.diw.test.RegistrationTest" time="39.623">
-    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:494)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at org.testng.Assert.assertTrue(Assert.java:52)
-	at com.diw.test.RegistrationTest.checkRegistration(RegistrationTest.java:40)
+  <testcase name="checkUserLogin" classname="com.diw.test.LoginTest" time="11.066"/>
+  <testcase name="checkUserLogout" classname="com.diw.test.LoginTest" time="3.608"/>
+  <testcase name="checkRegistration" classname="com.diw.test.RegistrationTest" time="60.294">
+    <failure message="Time out exception is occurred" type="java.lang.AssertionError">java.lang.AssertionError: Time out exception is occurred
+	at com.diw.action.UserActions.getWebElement(UserActions.java:55)
+	at com.diw.action.UserActions.getText(UserActions.java:106)
+	at com.diw.test.RegistrationTest.checkRegistration(RegistrationTest.java:35)
 </failure>
   </testcase>
 </testsuite>

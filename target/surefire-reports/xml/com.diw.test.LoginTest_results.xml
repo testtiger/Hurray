@@ -4,11 +4,11 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="18.742">
+           time="14.670">
   <properties />
   
   
-            <testcase name="checkUserLogin" time="15.696" classname="com.diw.test.LoginTest" />
-                <testcase name="checkUserLogout" time="3.046" classname="com.diw.test.LoginTest" />
+            <testcase name="checkUserLogout" time="3.603" classname="com.diw.test.LoginTest" />
+                <testcase name="checkUserLogin" time="11.067" classname="com.diw.test.LoginTest" />
       
 </testsuite>

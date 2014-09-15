@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Smoke-Test-Suite]">
+  <parameter name="pwd" value="123456"/>
+  <parameter name="email" value="diwakara.kumar77@gmail.com"/>
+  <parameter name="classname" value="com.diw.main.DriverManager"/>
+  <parameter name="browser" value="org.openqa.selenium.chrome.ChromeDriver"/>
+  <parameter name="ie-driver-path" value="Drivers\IEDriverServer.exe"/>
+  <parameter name="chrome-driver-path" value="Drivers\chromedriver.exe"/>
+  <listeners>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="ru.yandex.qatools.allure.testng.AllureTestListener"/>
+  </listeners>
+  <test name="Login-test(failed)">
+    <classes>
+      <class name="com.diw.test.LoginTest">
+        <methods>
+          <include name="setup"/>
+          <include name="setupChromeAndIEDriverProps"/>
+          <include name="store"/>
+          <include name="tear"/>
+          <include name="setDriver"/>
+        </methods>
+      </class> <!-- com.diw.test.LoginTest -->
+      <class name="com.diw.test.RegistrationTest">
+        <methods>
+          <include name="setup"/>
+          <include name="store"/>
+          <include name="setDriver"/>
+          <include name="checkRegistration"/>
+        </methods>
+      </class> <!-- com.diw.test.RegistrationTest -->
+    </classes>
+  </test> <!-- Login-test(failed) -->
+</suite> <!-- Failed suite [Smoke-Test-Suite] -->

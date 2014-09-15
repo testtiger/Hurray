@@ -48,8 +48,13 @@
 			<groupId>org.uncommons</groupId>
 			<artifactId>reportng</artifactId>
 			<version>1.1.4</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.testng</groupId>
+					<artifactId>testng</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
-		
 		<dependency>
 			<groupId>ru.yandex.qatools.allure</groupId>
 			<artifactId>allure-testng-adaptor</artifactId>
@@ -67,10 +72,12 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>2.17</version>
 				<configuration>
-					<outputDirectory>${basedir}\results</outputDirectory>
+					<argLine>		-javaagent:${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar
+					</argLine>
 					<suiteXmlFiles>
 						<suiteXmlFile>${basedir}\diwng.xml</suiteXmlFile>
 					</suiteXmlFiles>
+					<outputDirectory>${basedir}/results</outputDirectory>
 				</configuration>
 				<dependencies>
 					<dependency>

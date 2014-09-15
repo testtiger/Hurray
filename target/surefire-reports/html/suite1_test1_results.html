@@ -12,7 +12,7 @@
 <body>
 <h1>Login-test</h1>
 <p>
-  Test duration: 80.898s
+  Test duration: 86.457s
 </p>
 
 
@@ -28,20 +28,18 @@
                   checkRegistration
       </td>
   <td class="duration">
-    39.620s
+    60.287s
   </td>
   <td class="result">
         
     
         
 
-        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: expected [true] but found [false]</b></a><br />
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: Time out exception is occurred</b></a><br />
     <div class="stackTrace" id="exception-0">
-              org.testng.Assert.fail(Assert.java:94)<br />
-              org.testng.Assert.failNotEquals(Assert.java:494)<br />
-              org.testng.Assert.assertTrue(Assert.java:42)<br />
-              org.testng.Assert.assertTrue(Assert.java:52)<br />
-              com.diw.test.RegistrationTest.checkRegistration(RegistrationTest.java:40)<br />
+              com.diw.action.UserActions.getWebElement(UserActions.java:55)<br />
+              com.diw.action.UserActions.getText(UserActions.java:106)<br />
+              com.diw.test.RegistrationTest.checkRegistration(RegistrationTest.java:35)<br />
               sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
               sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)<br />
               sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
@@ -86,7 +84,7 @@
                   checkUserLogin
       </td>
   <td class="duration">
-    15.696s
+    11.067s
   </td>
   <td class="result">
         
@@ -101,7 +99,7 @@
                   checkUserLogout
       </td>
   <td class="duration">
-    3.046s
+    3.603s
   </td>
   <td class="result">
         

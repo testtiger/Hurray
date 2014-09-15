@@ -32,9 +32,9 @@ public class RegistrationPage {
 		UserActions.Type(driver, By.xpath(rgstr_email_text_field), a[2]);
 		UserActions.Type(driver, By.xpath(pwd_text_field), a[3]);
 		UserActions.Type(driver, By.xpath(cnfrm_pwd_text_field), a[4]);
-		UserActions.selectOptionFromDropDwon(driver, By.xpath(dob_day_drop_down), 1);
-		UserActions.selectOptionFromDropDwon(driver, By.xpath(dob_month_drop_down), 1);
-		UserActions.selectOptionFromDropDwon(driver, By.xpath(dob_year_drop_down), 1);
+		UserActions.selectOptionFromDropDown(driver, By.xpath(dob_day_drop_down), 1);
+		UserActions.selectOptionFromDropDown(driver, By.xpath(dob_month_drop_down), 1);
+		UserActions.selectOptionFromDropDown(driver, By.xpath(dob_year_drop_down), 1);
 		UserActions.click(driver, By.xpath(gender_checkbox));
 		UserActions.click(driver, By.xpath(privacy_policy_checkbox));
 		UserActions.click(driver, By.xpath(regstr_button));

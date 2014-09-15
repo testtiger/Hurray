@@ -2,12 +2,28 @@
 <testng-results skipped="0" failed="1" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Smoke-Test-Suite" duration-ms="80980" started-at="2014-07-17T09:44:25Z" finished-at="2014-07-17T09:45:46Z">
+  <suite name="Smoke-Test-Suite" duration-ms="85288" started-at="2014-09-15T09:04:42Z" finished-at="2014-09-15T09:06:07Z">
     <groups>
     </groups>
-    <test name="Login-test" duration-ms="80980" started-at="2014-07-17T09:44:25Z" finished-at="2014-07-17T09:45:46Z">
+    <test name="Login-test" duration-ms="85288" started-at="2014-09-15T09:04:42Z" finished-at="2014-09-15T09:06:07Z">
       <class name="com.diw.test.LoginTest">
-        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.diw.test.LoginTest@75077e76]" name="setup" is-config="true" duration-ms="4507" started-at="2014-07-17T15:14:25Z" finished-at="2014-07-17T15:14:29Z">
+        <test-method status="PASS" signature="setupChromeAndIEDriverProps(java.lang.String, java.lang.String)[pri:0, instance:com.diw.test.LoginTest@15ab7d89]" name="setupChromeAndIEDriverProps" is-config="true" duration-ms="26" started-at="2014-09-15T14:34:42Z" finished-at="2014-09-15T14:34:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Drivers\chromedriver.exe]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Drivers\IEDriverServer.exe]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupChromeAndIEDriverProps -->
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.diw.test.LoginTest@15ab7d89]" name="setup" is-config="true" duration-ms="4499" started-at="2014-09-15T14:34:42Z" finished-at="2014-09-15T14:34:47Z">
           <params>
             <param index="0">
               <value>
@@ -23,11 +39,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="setDriver()[pri:0, instance:com.diw.test.LoginTest@75077e76]" name="setDriver" is-config="true" duration-ms="16744" started-at="2014-07-17T15:14:29Z" finished-at="2014-07-17T15:14:46Z">
+        <test-method status="PASS" signature="store(org.testng.ITestContext)[pri:0, instance:com.diw.test.LoginTest@15ab7d89]" name="store" is-config="true" duration-ms="0" started-at="2014-09-15T14:34:47Z" finished-at="2014-09-15T14:34:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@20cbb72d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- store -->
+        <test-method status="PASS" signature="setDriver()[pri:0, instance:com.diw.test.LoginTest@15ab7d89]" name="setDriver" is-config="true" duration-ms="5682" started-at="2014-09-15T14:34:47Z" finished-at="2014-09-15T14:34:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setDriver -->
-        <test-method status="PASS" signature="checkUserLogin(java.lang.String, java.lang.String)[pri:0, instance:com.diw.test.LoginTest@75077e76]" name="checkUserLogin" duration-ms="15696" started-at="2014-07-17T15:14:46Z" finished-at="2014-07-17T15:15:02Z">
+        <test-method status="PASS" signature="checkUserLogin(java.lang.String, java.lang.String)[pri:0, instance:com.diw.test.LoginTest@15ab7d89]" name="checkUserLogin" duration-ms="11067" started-at="2014-09-15T14:34:52Z" finished-at="2014-09-15T14:35:03Z">
           <params>
             <param index="0">
               <value>
@@ -43,17 +70,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkUserLogin -->
-        <test-method status="PASS" signature="checkUserLogout()[pri:0, instance:com.diw.test.LoginTest@75077e76]" name="checkUserLogout" duration-ms="3046" started-at="2014-07-17T15:15:02Z" finished-at="2014-07-17T15:15:05Z">
+        <test-method status="PASS" signature="checkUserLogout()[pri:0, instance:com.diw.test.LoginTest@15ab7d89]" name="checkUserLogout" duration-ms="3603" started-at="2014-09-15T14:35:03Z" finished-at="2014-09-15T14:35:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkUserLogout -->
-        <test-method status="PASS" signature="tear()[pri:0, instance:com.diw.test.LoginTest@75077e76]" name="tear" is-config="true" duration-ms="1277" started-at="2014-07-17T15:15:45Z" finished-at="2014-07-17T15:15:46Z">
+        <test-method status="PASS" signature="tear()[pri:0, instance:com.diw.test.LoginTest@15ab7d89]" name="tear" is-config="true" duration-ms="1293" started-at="2014-09-15T14:36:08Z" finished-at="2014-09-15T14:36:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tear -->
       </class> <!-- com.diw.test.LoginTest -->
       <class name="com.diw.test.RegistrationTest">
-        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.diw.test.RegistrationTest@1ae2cf08]" name="setup" is-config="true" duration-ms="0" started-at="2014-07-17T15:15:05Z" finished-at="2014-07-17T15:15:05Z">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.diw.test.RegistrationTest@4f11241e]" name="setup" is-config="true" duration-ms="0" started-at="2014-09-15T14:35:07Z" finished-at="2014-09-15T14:35:07Z">
           <params>
             <param index="0">
               <value>
@@ -69,18 +96,27 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="checkRegistration()[pri:0, instance:com.diw.test.RegistrationTest@1ae2cf08]" name="checkRegistration" duration-ms="39620" started-at="2014-07-17T15:15:05Z" finished-at="2014-07-17T15:15:45Z">
+        <test-method status="PASS" signature="store(org.testng.ITestContext)[pri:0, instance:com.diw.test.RegistrationTest@4f11241e]" name="store" is-config="true" duration-ms="0" started-at="2014-09-15T14:35:07Z" finished-at="2014-09-15T14:35:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@20cbb72d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- store -->
+        <test-method status="FAIL" signature="checkRegistration()[pri:0, instance:com.diw.test.RegistrationTest@4f11241e]" name="checkRegistration" duration-ms="60287" started-at="2014-09-15T14:35:07Z" finished-at="2014-09-15T14:36:07Z">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [true] but found [false]]]>
+              <![CDATA[Time out exception is occurred]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:494)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at org.testng.Assert.assertTrue(Assert.java:52)
-	at com.diw.test.RegistrationTest.checkRegistration(RegistrationTest.java:40)
+              <![CDATA[java.lang.AssertionError: Time out exception is occurred
+	at com.diw.action.UserActions.getWebElement(UserActions.java:55)
+	at com.diw.action.UserActions.getText(UserActions.java:106)
+	at com.diw.test.RegistrationTest.checkRegistration(RegistrationTest.java:35)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -114,29 +150,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkRegistration -->
-        <test-method status="PASS" signature="setDriver()[pri:0, instance:com.diw.test.RegistrationTest@1ae2cf08]" name="setDriver" is-config="true" duration-ms="0" started-at="2014-07-17T15:15:05Z" finished-at="2014-07-17T15:15:05Z">
+        <test-method status="PASS" signature="setDriver()[pri:0, instance:com.diw.test.RegistrationTest@4f11241e]" name="setDriver" is-config="true" duration-ms="0" started-at="2014-09-15T14:35:07Z" finished-at="2014-09-15T14:35:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setDriver -->
       </class> <!-- com.diw.test.RegistrationTest -->
-      <class name="com.diw.main.DriverManager">
-        <test-method status="PASS" signature="setupChromeAndIEDriverProps(java.lang.String, java.lang.String)[pri:0, instance:com.diw.main.DriverManager@46a60ffc]" name="setupChromeAndIEDriverProps" is-config="true" duration-ms="8" started-at="2014-07-17T15:14:25Z" finished-at="2014-07-17T15:14:25Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Drivers\chromedriver.exe]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Drivers\IEDriverServer.exe]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupChromeAndIEDriverProps -->
-      </class> <!-- com.diw.main.DriverManager -->
     </test> <!-- Login-test -->
   </suite> <!-- Smoke-Test-Suite -->
 </testng-results>

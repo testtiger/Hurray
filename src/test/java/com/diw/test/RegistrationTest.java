@@ -25,7 +25,7 @@ public class RegistrationTest extends RootTest{
 
 		driver=super.getDriver();
 	}
-	String[] a=new String[]{"mark","B","markb123@gmail.com","p123456","p123456"};
+	String[] a=new String[]{"mark","B","markb1213@gmail.com","p123456","p123456"};
 
 	@Test(description="")
 	public void checkRegistration(){

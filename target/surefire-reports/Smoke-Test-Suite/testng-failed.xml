@@ -16,6 +16,8 @@
       <class name="com.diw.test.LoginTest">
         <methods>
           <include name="setup"/>
+          <include name="setupChromeAndIEDriverProps"/>
+          <include name="store"/>
           <include name="tear"/>
           <include name="setDriver"/>
         </methods>
@@ -23,15 +25,11 @@
       <class name="com.diw.test.RegistrationTest">
         <methods>
           <include name="setup"/>
+          <include name="store"/>
           <include name="setDriver"/>
           <include name="checkRegistration"/>
         </methods>
       </class> <!-- com.diw.test.RegistrationTest -->
-      <class name="com.diw.main.DriverManager">
-        <methods>
-          <include name="setupChromeAndIEDriverProps"/>
-        </methods>
-      </class> <!-- com.diw.main.DriverManager -->
     </classes>
   </test> <!-- Login-test(failed) -->
 </suite> <!-- Failed suite [Smoke-Test-Suite] -->

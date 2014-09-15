@@ -3,19 +3,19 @@
     "title" : "Product defects",
     "status" : "FAILED",
     "defects" : [ {
-      "uid" : "1812a57f315b5186",
+      "uid" : "4640bc0d48d5f52b",
       "failure" : {
-        "message" : "AssertionError: expected [true] but found [false]",
+        "message" : "AssertionError: Time out exception is occurred",
         "stackTrace" : null
       },
       "testCases" : [ {
-        "uid" : "a586aaa24d8734db",
+        "uid" : "d53194b0bf3b4a57",
         "name" : "checkRegistration",
         "title" : "Check registration",
         "time" : {
-          "start" : 1405590305508,
-          "stop" : 1405590345133,
-          "duration" : 39625
+          "start" : 1410771907607,
+          "stop" : 1410771967907,
+          "duration" : 60300
         },
         "severity" : "NORMAL",
         "status" : "FAILED"

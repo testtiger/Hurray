@@ -4,18 +4,16 @@
            failures="1"
            errors="0"
            skipped="0"
-           time="39.620">
+           time="60.287">
   <properties />
-            <testcase name="checkRegistration" time="39.620" classname="com.diw.test.RegistrationTest">
+            <testcase name="checkRegistration" time="60.287" classname="com.diw.test.RegistrationTest">
                 <failure type="java.lang.AssertionError"
-                  message="expected [true] but found [false]"
+                  message="Time out exception is occurred"
               >
-<![CDATA[java.lang.AssertionError: expected [true] but found [false]
-  org.testng.Assert.fail(Assert.java:94)
-  org.testng.Assert.failNotEquals(Assert.java:494)
-  org.testng.Assert.assertTrue(Assert.java:42)
-  org.testng.Assert.assertTrue(Assert.java:52)
-  com.diw.test.RegistrationTest.checkRegistration(RegistrationTest.java:40)
+<![CDATA[java.lang.AssertionError: Time out exception is occurred
+  com.diw.action.UserActions.getWebElement(UserActions.java:55)
+  com.diw.action.UserActions.getText(UserActions.java:106)
+  com.diw.test.RegistrationTest.checkRegistration(RegistrationTest.java:35)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
   sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

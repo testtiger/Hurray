@@ -4,6 +4,8 @@ import com.diw.action.UserActions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import ru.yandex.qatools.allure.annotations.Step;
+
 public class LoginPage {
 
 	private static String email="//input[@id='email']";
@@ -16,6 +18,7 @@ public class LoginPage {
 
 	}
 	
+
 	public static  MyAccount doLogin(WebDriver driver,String email_id,String password){
 		HomePage.clickOnsigninLink(driver);
 		UserActions.Type(driver, By.xpath(email),email_id);

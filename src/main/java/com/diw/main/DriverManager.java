@@ -1,27 +1,30 @@
 package com.diw.main;
 
 import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
-import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.Parameters;
 import com.diw.Tracker.EventTracker;
 
 public class DriverManager implements Manager {
 	private static WebDriver driver;
-
-	public WebDriver getDriver(String browser_name) {
+	/**
+	 * @param browser_class 
+	 * This method takes fully qualified java class name in order to get the required browser object 
+	 */
+	public WebDriver getDriver(String browser_class) {
 		if(driver==null){
-			setDriver(browser_name);
+			setDriver(browser_class);
 		}	
 		return driver;
 	}
-
-
+	/*
+	 * This method will be called by  @see com.diw.main.Manager#getDriver(java.lang.String) method
+	 * & It is responsible to create browser driver object  
+	 *
+	 */
 	public void setDriver(String browser) {
 		try {
-			driver = (WebDriver) Class.forName(browser).newInstance();
+			driver=(WebDriver)Class.forName(browser).newInstance();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -29,11 +32,10 @@ public class DriverManager implements Manager {
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		driver=registerEvents(driver);
 	}
-
 	/**
 	 * @param driver
-	 *            This method register the web driver type object & register
-	 *            with the web driver event listeners
+	 *  This method register the web driver type object & register
+	 * with the web driver event listener@see com.diw.Tracker.EventTracker
 	 */
 	public WebDriver registerEvents(WebDriver driver) {
 		EventFiringWebDriver ef = new EventFiringWebDriver(driver);
@@ -42,26 +44,13 @@ public class DriverManager implements Manager {
 	}
 
 	/**
-	 * @param chrome_driver_path
-	 * @param ie_driver_path
-	 *            This method will set the Chrome driver & IE driver executables
-	 *            in the system properties
-	 */
-	@BeforeSuite
-	@Parameters({ "chrome-driver-path", "ie-driver-path" })
-	public void setupChromeAndIEDriverProps(String chrome_driver_path,
-			String ie_driver_path) {
-		System.setProperty("webdriver.chrome.driver", chrome_driver_path);
-		System.setProperty("webdriver.ie.driver", ie_driver_path);
-	}
-
-	/**
-	 * This method Closes the created driver object.
+	 * @param driver
+	 * This method kills the created driver object.
 	 * 
 	 */
 
 	public void closeDriver(WebDriver driver) {
-		driver.quit();
+        driver.quit();
 	}
 
 }

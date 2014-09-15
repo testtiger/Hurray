@@ -1,34 +1,34 @@
 {
   "testCases" : [ {
-    "uid" : "bc9017ce2848d352",
+    "uid" : "4b5499e3acbdf869",
     "name" : "checkUserLogin[diwakara.kumar77@gmail.com,123456]",
     "title" : "Check user login [diwakara.kumar77@gmail.com,123456]",
     "time" : {
-      "start" : 1405590286703,
-      "stop" : 1405590302392,
-      "duration" : 15689
+      "start" : 1410771892848,
+      "stop" : 1410771903906,
+      "duration" : 11058
     },
     "severity" : "NORMAL",
     "status" : "PASSED"
   }, {
-    "uid" : "bda9bd830489f35f",
+    "uid" : "6f04ac03ee255d17",
     "name" : "checkUserLogout",
     "title" : "Check user logout",
     "time" : {
-      "start" : 1405590302456,
-      "stop" : 1405590305502,
-      "duration" : 3046
+      "start" : 1410771903996,
+      "stop" : 1410771907599,
+      "duration" : 3603
     },
     "severity" : "NORMAL",
     "status" : "PASSED"
   }, {
-    "uid" : "a586aaa24d8734db",
+    "uid" : "d53194b0bf3b4a57",
     "name" : "checkRegistration",
     "title" : "Check registration",
     "time" : {
-      "start" : 1405590305508,
-      "stop" : 1405590345133,
-      "duration" : 39625
+      "start" : 1410771907607,
+      "stop" : 1410771967907,
+      "duration" : 60300
     },
     "severity" : "NORMAL",
     "status" : "FAILED"
