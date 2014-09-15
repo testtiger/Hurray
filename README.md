@@ -18,7 +18,7 @@ after that use following maven command to run the tests parallel:
 [ReportNG]:http://reportng.uncommons.org/
 [Hub and node setup]:https://code.google.com/p/selenium/wiki/Grid2
 
-Note: To run the test in parallel execution we need to setup Hub and nodes and externally see [Hub and node setup]
+Note: To run the test in parallel execution we need to setup Hub and nodes externally see [Hub and node setup]
 Reports:
 ========
 In Hurray [Allure] framework and [ReportNG] is used for test results reports.
