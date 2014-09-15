@@ -7,7 +7,7 @@ Huuray is the web application automation framework developed using Selenium web 
 How to run:
 ===========
 [Maven]: http://maven.apache.org/
-To run the project you need to install [Maven].
+To run the project,install [Maven].
 Use the following maven command to run the tests linearly: 
 * Mvn clean test
 
