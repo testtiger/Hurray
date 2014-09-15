@@ -7,9 +7,10 @@ import org.testng.ITestContext;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Parameters;
 
-
+@Listeners(com.diw.TestListeners.TestListener.class)
 public class RootTest {
 	private Manager manager;
 	private WebDriver driver;
