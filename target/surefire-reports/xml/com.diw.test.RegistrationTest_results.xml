@@ -4,15 +4,15 @@
            failures="1"
            errors="0"
            skipped="0"
-           time="60.287">
+           time="61.308">
   <properties />
-            <testcase name="checkRegistration" time="60.287" classname="com.diw.test.RegistrationTest">
+            <testcase name="checkRegistration" time="61.308" classname="com.diw.test.RegistrationTest">
                 <failure type="java.lang.AssertionError"
                   message="Time out exception is occurred"
               >
 <![CDATA[java.lang.AssertionError: Time out exception is occurred
-  com.diw.action.UserActions.getWebElement(UserActions.java:55)
-  com.diw.action.UserActions.getText(UserActions.java:106)
+  com.diw.action.UserActions.getWebElement(UserActions.java:57)
+  com.diw.action.UserActions.getText(UserActions.java:121)
   com.diw.test.RegistrationTest.checkRegistration(RegistrationTest.java:35)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)

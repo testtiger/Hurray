@@ -1,7 +1,6 @@
 package com.diw.main;
 
 import java.io.File;
-
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.annotations.AfterSuite;
@@ -9,12 +8,11 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Parameters;
-
+import com.diw.main.Manager;
 @Listeners(com.diw.TestListeners.TestListener.class)
 public class RootTest {
 	private Manager manager;
 	private WebDriver driver;
-	
 	@BeforeClass
 	@Parameters({"browser", "classname"})
 	public void setup(String browser, String classname) {
@@ -60,7 +58,8 @@ public class RootTest {
 		if (scree_shots_directory.exists()) {
 			if (scree_shots_directory.list().length == 0) {
 				scree_shots_directory.delete();
-			} else {
+			} 
+			else{
 				String inner_files[] = scree_shots_directory.list();
 				for (String temp : inner_files) {
 					new File(scree_shots_directory, temp).delete();

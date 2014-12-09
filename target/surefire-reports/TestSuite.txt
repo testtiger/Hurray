@@ -1,10 +1,18 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 88.597 sec <<< FAILURE! - in TestSuite
-checkRegistration(com.diw.test.RegistrationTest)  Time elapsed: 60.294 sec  <<< FAILURE!
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 99.077 sec <<< FAILURE! - in TestSuite
+checkUserLogin(com.diw.test.LoginTest)  Time elapsed: 15.27 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.diw.test.LoginTest.checkUserLogin(LoginTest.java:40)
+
+checkRegistration(com.diw.test.RegistrationTest)  Time elapsed: 61.488 sec  <<< FAILURE!
 java.lang.AssertionError: Time out exception is occurred
-	at com.diw.action.UserActions.getWebElement(UserActions.java:55)
-	at com.diw.action.UserActions.getText(UserActions.java:106)
+	at com.diw.action.UserActions.getWebElement(UserActions.java:57)
+	at com.diw.action.UserActions.getText(UserActions.java:121)
 	at com.diw.test.RegistrationTest.checkRegistration(RegistrationTest.java:35)
 

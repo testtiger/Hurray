@@ -9,7 +9,7 @@ import ru.yandex.qatools.allure.annotations.Step;
 public class LoginPage {
 
 	private static String email="//input[@id='email']";
-	private static String pwd="//input[@type='password']";
+	private static String pwd="//input[@id='pass']";
 	private static String sign_in="//button[@id='send2']";
 	private static String Loinpage_id="//h1[contains(text(),'Sign In')]";
 	private static String logo=".logo";

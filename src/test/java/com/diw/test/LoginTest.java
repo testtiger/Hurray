@@ -30,13 +30,9 @@ public class LoginTest extends RootTest{
 		driver.get(url);
 	
 	}
-	@Features("RO Search feature")
-	@Stories("Search #8914")
-	@Step("Entering Username and password in the corresponding fields & click on sign in button" )
-	public void m1(){
-		
-	}
+
 	@Parameters({ "email", "pwd" })
+	@Step("Enter user name,pwd and click on sigin btn & verify the signin ")
 	@Test
 	public void checkUserLogin(String email_id, String pwd) {
 
@@ -46,7 +42,6 @@ public class LoginTest extends RootTest{
 	@Step("Click on Log out link in the Header ")
 	@Test
 	public void checkUserLogout() {
-
 		MyAccount.doLogout(driver);
 		Assert.assertTrue(driver.findElement(
 				By.xpath("//h1[contains(text(),'You are now logged out')]"))

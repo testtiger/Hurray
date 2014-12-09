@@ -9,7 +9,7 @@ import com.diw.action.UserActions;
 
 public class MyAccount {
 
-	private static String sign_out_link="//a[@title='Sign Out']";
+	private static String sign_out_link="//a[text()='Sign Out']";
 	private static String text_after_signout="//h1[contains(text(),'You are now logged out')]";
 
 	public MyAccount(WebDriver driver){

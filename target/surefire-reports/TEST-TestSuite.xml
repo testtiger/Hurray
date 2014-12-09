@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="74.968" tests="3" errors="0" skipped="0" failures="1">
+<testsuite name="TestSuite" time="79.059" tests="3" errors="0" skipped="0" failures="2">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk\jre\bin"/>
@@ -25,7 +25,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 7"/>
-    <property name="classworlds.conf" value="C:\Users\Admin\Desktop\Sel\apache-maven-3.2.1-bin\apache-maven-3.2.1\bin\..\bin\m2.conf"/>
+    <property name="classworlds.conf" value="E:\Diw_Practice\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf6754311929372093264.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.library.path" value="C:\Program Files\Java\jdk\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files (x86)\Common Files\Roxio Shared\DLLShared\;C:\Program Files (x86)\Common Files\Roxio Shared\OEM\DLLShared\;C:\Program Files (x86)\Common Files\Roxio Shared\OEM\DLLShared\;C:\Program Files (x86)\Common Files\Roxio Shared\OEM\12.0\DLLShared\;C:\Program Files (x86)\Roxio\OEM\AudioCore\;C:\Program Files (x86)\Google\Google Apps Sync\;C:\Program Files (x86)\Google\Google Apps Migration\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Java\jdk\bin;E:\Ant\apache-ant-1.9.2-bin\apache-ant-1.9.2\bin;C:\Users\Admin\Desktop\Sel\chromedriver.exe;C:\Users\Admin\Desktop\Sel\apache-maven-3.2.1-bin\apache-maven-3.2.1\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\MySQL\MySQL Utilities 1.4.3\;C:\Program Files (x86)\MySQL\MySQL Utilities 1.4.3\Doctrine extensions for PHP\;C:\Users\Admin\AppData\Roaming\npm;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -38,12 +38,12 @@
     <property name="java.specification.version" value="1.7"/>
     <property name="file.encoding" value="Cp1252"/>
     <property name="user.name" value="Admin"/>
-    <property name="java.class.path" value="C:\Users\Admin\Desktop\Sel\apache-maven-3.2.1-bin\apache-maven-3.2.1\bin\..\boot\plexus-classworlds-2.5.1.jar"/>
+    <property name="java.class.path" value="C:\Users\Admin\Desktop\Sel\apache-maven-3.2.1-bin\apache-maven-3.2.1\boot\plexus-classworlds-2.5.1.jar"/>
     <property name="org.slf4j.simpleLogger.defaultLogLevel" value="info"/>
     <property name="java.vm.specification.version" value="1.7"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\Program Files\Java\jdk\jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -B test"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -52,20 +52,31 @@
     <property name="java.ext.dirs" value="C:\Program Files\Java\jdk\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk\jre\lib\resources.jar;C:\Program Files\Java\jdk\jre\lib\rt.jar;C:\Program Files\Java\jdk\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk\jre\lib\jsse.jar;C:\Program Files\Java\jdk\jre\lib\jce.jar;C:\Program Files\Java\jdk\jre\lib\charsets.jar;C:\Program Files\Java\jdk\jre\lib\jfr.jar;C:\Program Files\Java\jdk\jre\classes"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="C:\Users\Admin\Desktop\Sel\apache-maven-3.2.1-bin\apache-maven-3.2.1\bin\.."/>
+    <property name="maven.home" value="C:\Users\Admin\Desktop\Sel\apache-maven-3.2.1-bin\apache-maven-3.2.1"/>
     <property name="file.separator" value="\"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="maven.bootclasspath" value="C:\Users\Admin\Desktop\Sel\apache-maven-3.2.1-bin\apache-maven-3.2.1\boot\plexus-classworlds-2.5.1.jar"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="checkUserLogin" classname="com.diw.test.LoginTest" time="11.066"/>
-  <testcase name="checkUserLogout" classname="com.diw.test.LoginTest" time="3.608"/>
-  <testcase name="checkRegistration" classname="com.diw.test.RegistrationTest" time="60.294">
+  <testcase name="checkUserLogin" classname="com.diw.test.LoginTest" time="15.27">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.diw.test.LoginTest.checkUserLogin(LoginTest.java:40)
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver (v2.9.248315) on port 23826
+]]></system-err>
+  </testcase>
+  <testcase name="checkUserLogout" classname="com.diw.test.LoginTest" time="2.301"/>
+  <testcase name="checkRegistration" classname="com.diw.test.RegistrationTest" time="61.488">
     <failure message="Time out exception is occurred" type="java.lang.AssertionError">java.lang.AssertionError: Time out exception is occurred
-	at com.diw.action.UserActions.getWebElement(UserActions.java:55)
-	at com.diw.action.UserActions.getText(UserActions.java:106)
+	at com.diw.action.UserActions.getWebElement(UserActions.java:57)
+	at com.diw.action.UserActions.getText(UserActions.java:121)
 	at com.diw.test.RegistrationTest.checkRegistration(RegistrationTest.java:35)
 </failure>
   </testcase>

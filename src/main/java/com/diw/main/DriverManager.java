@@ -17,7 +17,7 @@ public class DriverManager implements Manager {
 		}	
 		return driver;
 	}
-	/*
+	/**
 	 * This method will be called by  @see com.diw.main.Manager#getDriver(java.lang.String) method
 	 * & It is responsible to create browser driver object  
 	 *

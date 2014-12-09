@@ -1,57 +1,57 @@
 {
   "time" : {
-    "start" : 1410771882633,
-    "stop" : 1410771967937,
-    "duration" : 85304
+    "start" : 1415862637041,
+    "stop" : 1415862718619,
+    "duration" : 81578
   },
   "testSuites" : [ {
-    "uid" : "63a2fd34859a7c05",
+    "uid" : "4ff452ab3871de1b",
     "name" : "Smoke-Test-Suite",
     "title" : "Smoke-Test-Suite",
     "time" : {
-      "start" : 1410771882633,
-      "stop" : 1410771967937,
-      "duration" : 85304
+      "start" : 1415862637041,
+      "stop" : 1415862718619,
+      "duration" : 81578
     },
     "statistic" : {
       "total" : 3,
-      "passed" : 2,
+      "passed" : 0,
       "pending" : 0,
       "canceled" : 0,
-      "failed" : 1,
+      "failed" : 3,
       "broken" : 0
     },
     "description" : null,
     "testCases" : [ {
-      "uid" : "4b5499e3acbdf869",
+      "uid" : "caae7c668d34948b",
       "name" : "checkUserLogin[diwakara.kumar77@gmail.com,123456]",
       "title" : "Check user login [diwakara.kumar77@gmail.com,123456]",
       "time" : {
-        "start" : 1410771892848,
-        "stop" : 1410771903906,
-        "duration" : 11058
+        "start" : 1415862646593,
+        "stop" : 1415862657729,
+        "duration" : 11136
       },
       "severity" : "NORMAL",
-      "status" : "PASSED"
+      "status" : "FAILED"
     }, {
-      "uid" : "6f04ac03ee255d17",
+      "uid" : "af065efc897fe39f",
       "name" : "checkUserLogout",
       "title" : "Check user logout",
       "time" : {
-        "start" : 1410771903996,
-        "stop" : 1410771907599,
-        "duration" : 3603
+        "start" : 1415862657729,
+        "stop" : 1415862659119,
+        "duration" : 1390
       },
       "severity" : "NORMAL",
-      "status" : "PASSED"
+      "status" : "FAILED"
     }, {
-      "uid" : "d53194b0bf3b4a57",
+      "uid" : "a4d09c83695b78ff",
       "name" : "checkRegistration",
       "title" : "Check registration",
       "time" : {
-        "start" : 1410771907607,
-        "stop" : 1410771967907,
-        "duration" : 60300
+        "start" : 1415862659121,
+        "stop" : 1415862718599,
+        "duration" : 59478
       },
       "severity" : "NORMAL",
       "status" : "FAILED"

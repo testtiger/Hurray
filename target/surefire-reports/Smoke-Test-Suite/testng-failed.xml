@@ -19,6 +19,7 @@
           <include name="setupChromeAndIEDriverProps"/>
           <include name="store"/>
           <include name="tear"/>
+          <include name="checkUserLogin" invocation-numbers="0"/>
           <include name="setDriver"/>
         </methods>
       </class> <!-- com.diw.test.LoginTest -->

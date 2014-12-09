@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite xmlns:ns2="urn:model.allure.qatools.yandex.ru" start="1415863574500" stop="1415863587321">
+    <name>Smoke-Test-Suite</name>
+    <test-cases>
+        <test-case start="1415863581204" stop="0" status="passed">
+            <name>checkUserLogin[diwakara.kumar77@gmail.com,123456]</name>
+            <labels/>
+        </test-case>
+    </test-cases>
+    <labels/>
+</ns2:test-suite>
