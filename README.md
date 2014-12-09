@@ -2,12 +2,12 @@ Hurray
 ======
 Huuray is the web application automation framework developed using Selenium web driver (JAVA).
 * By using Hurray we can run the developed automation tests either in Linear or Parallel execution modes 
-* 'diwng.xml' and diw-grid.xml' are Testing related files by using diwng.xml we can the tests in linear mode and diw-grid.xml needs to be used to run tests in Parallel mode.
+* 'diwng.xml' and diw-grid.xml' are TestNG related files by using diwng.xml we can the tests in linear mode and diw-grid.xml needs to be used to run tests in Parallel mode.
 
 How to run:
 ===========
 [Maven]: http://maven.apache.org/
-To run the project you need to install [Maven].
+To run the project,install [Maven].
 Use the following maven command to run the tests linearly: 
 * Mvn clean test
 
@@ -18,7 +18,7 @@ after that use following maven command to run the tests parallel:
 [ReportNG]:http://reportng.uncommons.org/
 [Hub and node setup]:https://code.google.com/p/selenium/wiki/Grid2
 
-Note: To run the test in parallel execution we need to setup Hub and nodes and externally see [Hub and node setup]
+Note: To run the test in parallel execution we need to setup Hub and nodes externally see [Hub and node setup]
 Reports:
 ========
 In Hurray [Allure] framework and [ReportNG] is used for test results reports.
