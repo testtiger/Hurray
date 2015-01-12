@@ -35,7 +35,6 @@ public class UserActions {
 	}
 	public static WebElement getWebElement(WebDriver driver, final By locator){
 		WebElement element=null;
-		
 		try{
 			Wait<WebDriver> wait = new FluentWait<WebDriver>(driver).withTimeout(50, TimeUnit.SECONDS)
 			.pollingEvery(5, TimeUnit.SECONDS)
@@ -47,8 +46,6 @@ public class UserActions {
 				}
 			});
 			waitForPageLoad(driver);
-			while(element.isDisplayed()==false){
-			}
 			//highlightElement(driver, element);
 		}
 		catch(TimeoutException we){
@@ -148,7 +145,6 @@ public class UserActions {
 		Wait<WebDriver> wait = new WebDriverWait(driver,50);
 		try{
 			wait.until(ExpectedConditions.presenceOfElementLocated(locator));
-			wait.until(ExpectedConditions.);
 			log.info("Element is now present!! "+locator.toString());
 		}
 		catch(WebDriverException we){
@@ -156,5 +152,15 @@ public class UserActions {
 		}
 
 	}
+	 public static boolean isElementExistsOnDOM(WebDriver driver, By element){
+	        if(element==null)
+	            throw new IllegalArgumentException("Unable to check element existence on DOM,element is null,please check details");
+	        if(driver.findElements(element).size()>0){
+	            return true;
+	        }
+	        else{
+	            return false;
+	        }
+	    }
 
 }
